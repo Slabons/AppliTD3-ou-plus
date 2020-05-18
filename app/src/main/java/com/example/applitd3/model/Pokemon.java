@@ -1,4 +1,4 @@
-package com.example.applitd3;
+package com.example.applitd3.model;
 
 public class Pokemon {
     private String name;

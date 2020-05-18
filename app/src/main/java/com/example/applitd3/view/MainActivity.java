@@ -1,4 +1,4 @@
-package com.example.applitd3;
+package com.example.applitd3.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -10,12 +10,16 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.applitd3.Constants;
+import com.example.applitd3.R;
+import com.example.applitd3.data.PokeApi;
+import com.example.applitd3.model.Pokemon;
+import com.example.applitd3.model.RestPokemonResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -106,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
                     showError();
                 }
             }
-
 
 
             @Override

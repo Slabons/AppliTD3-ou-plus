@@ -1,4 +1,4 @@
-package com.example.applitd3;
+package com.example.applitd3.model;
 
 import java.util.List;
 

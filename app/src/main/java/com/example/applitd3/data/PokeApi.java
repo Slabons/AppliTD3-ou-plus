@@ -1,8 +1,9 @@
-package com.example.applitd3;
+package com.example.applitd3.data;
+
+import com.example.applitd3.model.RestPokemonResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Query;
 
 public interface PokeApi {
     @GET("/api/v2/pokemon")
