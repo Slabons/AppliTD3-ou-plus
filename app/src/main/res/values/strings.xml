@@ -3,4 +3,8 @@
     <string name="example_application">Example application</string>
     <string name="description">Description</string>
     <string name="todo">TODO</string>
+    <string name="le_nom_que_vous_voulez">le_nom_que_vous_voulez</string>
+    <string name="le_nom_que_je_veux">le_nom_que_je_veux</string>
+    <string name="you_re_breathtaking">You\'re breathtaking</string>
+    <string name="oui">oui</string>
 </resources>

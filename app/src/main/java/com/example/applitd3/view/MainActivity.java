@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.AdapterView;
 import android.widget.Toast;
@@ -63,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void navigateUpToDetails(Pokemon pokemon) {
-        Toast.makeText(getApplicationContext(), "TODO NAVIGATE", Toast.LENGTH_SHORT).show();
+        Intent myIntent = new Intent(MainActivity.this, DetailActivity.class);
+        myIntent.putExtra("pokemonKeyName", Singletons.getGson().toJson(pokemon));
+
+        MainActivity.this.startActivity(myIntent);
     }
 }
